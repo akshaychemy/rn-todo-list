@@ -5,3 +5,9 @@ npm install react-native-vector-icons
 //for bottom bar 
 npm install @react-navigation/native @react-navigation/bottom-tabs
 npm install react-native-screens react-native-safe-area-context
+
+
+//ecom appp
+npm install @react-navigation/native @react-navigation/stack
+npm install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
