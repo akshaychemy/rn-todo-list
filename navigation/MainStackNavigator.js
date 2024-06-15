@@ -3,20 +3,20 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-//screens
-import HomeScreen from '../screens/HomeScreen';
+// Import screens and navigators
 import ProductDetailsScreen from '../screens/ProductDetailsScreen';
-import CartScreen from '../screens/CartScreen';
+import BottomTabNavigator from './BottomTabNavigator';
+
+import BottomTabNavigator2 from './BottomTabNavigator2';
 
 const Stack = createStackNavigator();
 
 const MainStackNavigator = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Navigator initialRouteName="HomeTabs">
+        <Stack.Screen name="HomeTabs" component={BottomTabNavigator} options={{ headerShown: false }} />
         <Stack.Screen name="ProductDetails" component={ProductDetailsScreen} />
-        <Stack.Screen name="Cart" component={CartScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

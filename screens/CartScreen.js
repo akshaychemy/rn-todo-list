@@ -4,7 +4,7 @@ import { View, Text, Button, FlatList, StyleSheet, Dimensions } from 'react-nati
 
 const { width } = Dimensions.get('window');
 
-const CartScreen = ({ route }) => {
+const CartScreen = ({ route, navigation }) => {
   const [cart, setCart] = useState([]);
   
   useEffect(() => {
@@ -15,7 +15,6 @@ const CartScreen = ({ route }) => {
   }, [route.params?.product]);
 
   const placeOrder = () => {
-    // Implement COD order placement logic here
     alert('Order placed with Cash on Delivery!');
   };
 
