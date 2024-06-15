@@ -1,5 +1,8 @@
+npm install -g expo-cli@latest
+
 npm install @react-navigation/native
 npm install react-native-vector-icons
+
 
 npm i -g @expo/ngrok@^4.1.0
 
